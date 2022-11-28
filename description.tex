@@ -1,0 +1,17 @@
+for question1
+we have to create 3 threads each having different policies and we can set the priorities of each thread . These threads are run in parallel by creating all of them by pthread_create() functio.
+Now i have made 3 functions of all which counts from 1-2^32
+Now I have created 6 timestamps to note the start
+time and end time for each function and with the help of clock_gettime() function I have
+calculated the time required to execute each function by each thread.
+
+
+for ques 2
+we had to make our own system call to copy a 2D matrix and print it. First I have
+added my own system call in the syscall_64.tbl file then I have added my own function for that
+syscall in the sys.c file. This function has copy_from_user() and copy_to_user() kernel functions.
+Now I made a C program and made a 10x10 matrix and then I used my own syscall to copy that
+matrix and then I printed that copied matrix to check the working of the system call
+
+
+All other codes are in my artix
